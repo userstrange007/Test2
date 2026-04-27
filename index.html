@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Birthday Surprise</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<div class="sparkles">
+  <span></span><span></span><span></span><span></span><span></span>
+  <span></span><span></span><span></span><span></span><span></span>
+  <span></span><span></span><span></span><span></span><span></span>
+</div>
+
+  <!-- Welcome Screen -->
+  <div class="screen" id="welcomeScreen">
+    <h1>WELCOME</h1>
+<div class="welcome-divider">
+  <span></span>
+  <div class="heart">♥</div>
+  <span></span>
+</div>
+    <p>Enter the password</p>
+
+    <input type="password" id="passwordInput" placeholder="DDMM" />
+
+    <button onclick="checkPassword()">Enter </button>
+
+    <p id="errorMsg"></p>
+  </div>
+
+<!-- Main Page (hidden initially) -->
+<div class="screen" id="mainScreen" style="display:none;">
+
+  <h1 class="main-title">Happy Birthday ❤️</h1>
+
+  <p class="subtitle">A small gift made with love</p>
+
+  <!-- Memory Section -->
+  <div class="memory-section">
+    <div class="memory-card">Memory 1</div>
+    <div class="memory-card">Memory 2</div>
+    <div class="memory-card">Memory 3</div>
+  </div>
+
+  <!-- Message Section -->
+  <div class="message-box">
+    <p>
+      Wishing you joy, peace, and endless blessings.  
+      May your life be filled with love and grace. ✨
+    </p>
+  </div>
+
+</div>
+
+  <script src="script.js"></script>
+</body>
+</html>
