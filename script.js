@@ -26,15 +26,35 @@ function checkPassword() {
   }
 }
 
-function startWithSound() {
-  let music = document.getElementById("bgMusic");
-  music.play();
-
+function startWithoutSound() {
   revealBirthday();
 }
 
-function startWithoutSound() {
-  revealBirthday();
+function startWithSound() {
+
+  let music = document.getElementById("bgMusic");
+  let popup = document.getElementById("volumePopup");
+  let soundBox = document.getElementById("soundBox");
+
+  music.play();
+
+  /* hide sound box immediately */
+  soundBox.classList.add("hide-sound-box");
+
+  /* show popup */
+  popup.classList.remove("hidden-body");
+  popup.classList.add("show-body");
+
+  /* fade popup away */
+  setTimeout(() => {
+    popup.classList.add("popup-out");
+  }, 2200);
+
+  /* remove popup + start main reveal */
+  setTimeout(() => {
+    popup.style.display = "none";
+    revealBirthday();
+  }, 3000);
 }
 
 function toggleMusic() {
@@ -61,6 +81,7 @@ function revealBirthday() {
   const body = document.getElementById("bodySection");
   const name = document.getElementById("birthdayName");
   const blessing = document.getElementById("blessingSection");
+  const blower = document.getElementById("blowerAnimation");
   const memory = document.getElementById("memoryTimeline");
   const wishes = document.getElementById("wishesSection");
 
@@ -85,6 +106,11 @@ function revealBirthday() {
   blessing.classList.remove("hidden-body");
   blessing.classList.add("show-body");
 }, 1500);
+
+  setTimeout(() => {
+  blower.classList.remove("hidden-body");
+  blower.classList.add("show-body");
+}, 2100);
 
   setTimeout(() => {
   memory.classList.remove("hidden-body");
