@@ -12,23 +12,23 @@ function checkPassword() {
 
   error.textContent = "";
 
-    const welcomeScreen = document.getElementById("welcomeScreen");
-    const mainPage = document.getElementById("mainPage");
+  const welcomeScreen = document.getElementById("welcomeScreen");
+  const mainPage = document.getElementById("mainPage");
 
-    welcomeScreen.classList.add("fade-out");
+  welcomeScreen.classList.add("fade-out");
 
-    setTimeout(() => {
-      welcomeScreen.style.display = "none";
+  setTimeout(() => {
 
-      document.body.classList.add("main-active");
+    welcomeScreen.style.display = "none";
 
-      mainPage.classList.remove("hidden");
-      mainPage.classList.add("fade-in");
-    }, 700);
+    document.body.classList.add("main-active");
 
-  } else {
-    error.textContent = "Not quite right… try again ✨";
-  }
+    mainPage.classList.remove("hidden");
+    mainPage.classList.add("fade-in");
+
+    window.scrollTo(0, 0);
+
+  }, 700);
 }
 
 function startWithoutSound() {
