@@ -29,6 +29,19 @@
 }
 
 
+.gold-text {
+  color: #c89b3c;
+}
+
+.lavender-text {
+  color: #7d68a0;
+}
+
+.purple-text {
+  color: #d96aa5;
+}
+
+
 * {
   margin: 0;
   padding: 0;
@@ -607,8 +620,8 @@ body.main-active {
   margin: 10px auto 0;
   font-size: 24x;
   line-height: 1.7;
-  color: #6f5a86;
-  font-family: 'Raleway', sans-serif;
+  color: #d96aa5;
+  font-family: 'Montserrat', sans-serif;
   font-weight: 800;
   opacity: 0.95;
 }
@@ -653,6 +666,8 @@ body.main-active {
 .memory-timeline {
   margin-top: 70px;
   text-align: center;
+  font-family: 'Boston';
+  font-size: 15px;
 }
 
 .memory-scroll {
@@ -783,9 +798,9 @@ body.main-active {
 }
 
 .wish-name {
-  font-family: 'Playfair';
-  font-size: 15px;
-  font-weight: 700;
+  font-family: 'Handsome';
+  font-size: 18px;
+  font-weight: 550;
   color: #7d68a0;
   text-align: right;
   margin-bottom: 0;
@@ -1011,7 +1026,7 @@ body.main-active {
 }
 
 .finale-section {
-  margin-top: 100px;
+  margin-top: 80px;
   margin-bottom: 80px;
   text-align: center;
   position: relative;
@@ -1111,8 +1126,8 @@ body.main-active {
 .memory-board {
   position: relative;
 
- width: 1800px;
-  height: 750px;
+ width: 1200px;
+  height: 550px;
 
   margin: 0 auto;
 }
@@ -1136,7 +1151,7 @@ body.main-active {
 
 
 
-.a { left: 40px;  top: 30px;  width:150px; height:150px; }
+.a { left: 20px;  top: 30px;  width:170px; height:170px; }
 
 .b { left: 210px; top: 0px;   width:110px; height:110px; }
 
@@ -1144,11 +1159,11 @@ body.main-active {
 
 .d { left: 360px; top: 40px;  width:150px; height:160px; }
 
-.e { left: 520px; top: 20px;  width:130px; height:120px; }
+.e { left: 550px; top: 20px;  width:130px; height:120px; }
 
-.f { left: 660px; top: 120px; width:140px; height:120px; }
+.f { left: 710px; top: 80px; width:160px; height:130px; }
 
-.g { left: 820px; top: 30px;  width:260px; height:140px; }
+.g { left: 900px; top: 30px;  width:260px; height:140px; }
 
 .h { left: 1060px; top: 200px; width:150px; height:150px; }
 
